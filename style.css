@@ -48,14 +48,247 @@ nav a:hover{
 .hero{
     display: flex;
     align-items: 13px;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 65px 8%;
+    width: 100%;
+}
+
+.hero-text{
+    flex: 1;
+    min-width: 0;
+}
+
+.subtitulo {
+    color: #b66d4b;
+    font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
 
-.hero-text{
-    flex: 1;
+h1{
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+    color: #263f34;
 }
 
+. hero-text > p:not(.subtitulo){
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: #5d655f;
+}
 
+.botao{
+    display: inline-block;
+    background-color: #34594a;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+.botao:hover{
+    background-color: #b66d4b;
+    transform: translateY(-2px);
+}
+
+.hero-image{
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.hero h1{
+    font-size: 42px;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+}
+.conteudo{
+    padding: 75px 8%;
+    text-align: center;
+    background-color: #fff;
+}
+
+h2{
+    font-size: 34px;
+    color: #263f34;
+    margin-bottom: 35px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card{
+    background-color: #f8f6f0;
+    padding: 30px 25px;
+    border-radius: 10px;
+    border-bottom: 4px solid #9caf9f;
+    transition: 0.3s;
+}
+
+card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px #00000012;
+
+}
+
+.card span {
+    font-size: 38px;
+}
+
+.card h3 {
+    color: #34594a;
+    margin: 15px 0;
+    font-size: 21px;
+}
+
+.card p {
+    color: #626a64;
+    font-size: 15px;
+}
+
+.destaque {
+
+    text-align: center;
+
+    padding: 70px 15%;
+
+    background-color: #34594a;
+
+    color: white;
+
+}
+
+.destaque h2 {
+
+    color: white;
+
+    margin-bottom: 20px;
+
+}
+
+.destaque p {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    font-size: 17px;
+
+}
+
+.dicas {
+
+    padding: 75px 12%;
+
+}
+
+.dicas h2 {
+
+    margin-bottom: 25px;
+
+}
+
+.dicas ol {
+
+    padding-left: 25px;
+
+}
+
+.dicas li {
+
+    margin-bottom: 15px;
+
+    padding: 12px;
+
+    background-color: white;
+
+    border-radius: 6px;
+
+}
+
+footer {
+
+    text-align: center;
+
+    background-color: #20392f;
+
+    color: white;
+
+    padding: 25px;
+
+    font-size: 14px;
+
+}
+
+@media (max-width: 800px) {
+
+    header {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    nav {
+
+        justify-content: center;
+
+        gap: 15px;
+
+    }
+
+    .hero {
+
+        flex-direction: column;
+
+        padding: 45px 6%;
+
+    }
+
+    h1 {
+
+        font-size: 38px;
+
+    }
+
+    .hero-image img {
+
+        height: 280px;
+
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    h2 {
+
+        font-size: 28px;
+
+    }
+
+    .destaque {
+
+        padding: 50px 7%;
+
+    }
+
+}
